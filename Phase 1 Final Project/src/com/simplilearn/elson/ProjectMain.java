@@ -3,7 +3,7 @@ package com.simplilearn.elson;
 import java.util.Scanner;
 
 public class ProjectMain extends LockersOperations {
-	
+
 	public static void main(String[] args) {
 		Scanner obj = new Scanner(System.in);
 		int ch;
@@ -12,7 +12,7 @@ public class ProjectMain extends LockersOperations {
 			mainMenu();
 			System.out.println("Enter your choice:");
 			ch = Integer.parseInt(obj.nextLine());
-			
+
 			switch(ch)
 			{
 				case 1:getAllFiles();
@@ -27,11 +27,14 @@ public class ProjectMain extends LockersOperations {
 				break;
 				default:System.out.println("Invalid option: Please enter only the option above");
 				break;
-				
+
 				}
 		}
 			while(ch>0);
-			obj.close();
+		    obj.close();
+		
+		
+			
 	}
 
 }
